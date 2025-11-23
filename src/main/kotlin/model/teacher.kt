@@ -15,7 +15,7 @@ object Teacher: Table("teacher") {
 }
 
 @Serializable
-data class TeacherRegister(val firstName: String, val lastName: String, val email: String, val password: String, val school: String)
+data class TeacherRegister(val nombre: String, val apellidos: String, val email: String, val contraseña: String, val escuela: String)
 
 @Serializable
-data class TeacherLogin(val email: String, val password: String)
+data class TeacherLogin(val email: String, val contraseña: String)
