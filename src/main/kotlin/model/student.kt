@@ -1,9 +1,6 @@
 package com.example.model
 
-import com.example.model.Teacher.autoIncrement
-import com.example.model.Teacher.integer
-import com.example.model.Teacher.references
-import com.example.model.Teacher.varchar
+
 import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.sql.ReferenceOption
 import org.jetbrains.exposed.sql.Table
@@ -24,3 +21,5 @@ data class StudentLogin(val nombre: String, val apellidoPaterno: String, val ape
 @Serializable
 data class UserResponse(val id: Int, val fullName: String, val email: String? = null, val teacherId: Int? = null)
 
+@Serializable
+data class StudentCreate(val nombre: String, val apellidoP: String, val apellidoM: String)

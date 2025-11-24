@@ -19,3 +19,4 @@ data class TeacherRegister(val nombre: String, val apellidos: String, val email:
 
 @Serializable
 data class TeacherLogin(val email: String, val contraseña: String)
+
